@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input and Forms</title>
+</head>
+<body>
+    <form action="post">
+        <div>
+            <label for="username">Enter your username : </label>
+            <input type="text" id="username" name="username" />
+            <!-- now the label here is corrected with input field with "username" id -->
+        </div>
+
+        <!-- We can have multiple type of input fields -->
+
+        <div>
+            <!-- Creating a radio input filed that accepts the gender -->
+            <input type="radio" id="male" value="male" name="gender" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" value="female" name="gender" />
+            <label for="male">Female</label>
+            <!-- now since the name field is same only one of them will be selected at a time. -->
+        </div>
+
+        <div>
+            <!-- Creating a checkbox -->
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree">I understood the assignment</label>
+        </div>
+
+        <div>
+            <!-- Creating a text area -->
+            <label for="query"> For Queries</label>
+            <textarea name="query" id="query" rows="5" cols="50">Enter your queries here...
+            </textarea>
+            <!-- Here rows and cols field are used to specify the size of the text area -->
+        </div>
+
+        <div>
+            <!-- Select tag -->
+            <select name="fruits" id="fruits">
+                <option value="mango">Mango</option>
+                <option value="banana">Banana</option>
+                <option value="apple">Apple</option>
+            </select>
+        </div>
+
+        <a href="https://www.codewithharry.com/tutorial/more-on-forms/">more on forms</a>
+    </form>
+</body>
+</html>
