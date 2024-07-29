@@ -1,0 +1,37 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(148, 148, 245);
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    position: sticky;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex: 3;
+}
+.navItem{
+    text-decoration: none;
+    list-style: none;
+}
+#home{
+    text-decoration: none;
+    list-style: none;
+}
+
+.mainBody{
+    height:100rem;
+    width: 80rem;
+    border: 4px solid black;
+
+}
+

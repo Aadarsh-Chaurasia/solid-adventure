@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Boxes with random colors</title>
+    <style>
+        *{
+            margin:0;
+            paddig:0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 30rem;
+            width: 80rem;
+            border: 2px solid gray;
+            margin:2rem;
+            gap: 2rem;
+
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 10rem;
+            width: 10rem;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

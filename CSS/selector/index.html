@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selector */
+        div{
+            color: rgb(82, 82, 231);
+            /* This will apply on all div elements, and elements inside div element. */
+        }
+
+        /* Class Selector */
+        .red {
+            color: red;
+            /* This will apply on all elements with class red */
+        }
+
+        /* Id Selector */
+        #orange{
+            color: orange;
+            /* This will apply on element with id orange */
+        }
+
+        /* Child Selector */
+        div > p {
+            background-color: rgb(169, 105, 230);
+            /* This will apply on all paragraphs (p) that are directly inside a div element */
+        }
+
+        /* Descendent Selector */
+        div p {
+            color: brown;
+            /* This will apply on all the paras directly or indirectly inside a div */
+        }
+
+        /* universal selector */
+        *{
+            margin:10;
+        }
+
+        /* Pseudo Selector */
+        a:link{
+            /* When the link in anchor tag has not yet been visited, this is applied */
+            color: blueviolet;
+        }
+        a:active{
+            /* When you click on anchor tag this is applied. */
+            color: aqua;
+        }
+        a:hover{
+            /* When you hover over the anchor tag */
+            color: chartreuse;
+        }
+        a:visited{
+            /* When the website in anchor tag has been visited this is applied */
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This text is inside a div only.
+        <p> This text is inside a para that is inside a div</p>
+        <p class="red">This text is inside a para that has class red but is inside a div</p>
+        <p id="orange">This text is inside a para that has id orange but is inside a div</p>
+        <article>
+            <p>
+                This text is inside a para that is inside a article that is inside a div.
+                Now since this para is not directly inside a div, div > p won't apply to it. 
+            </p>
+        </article>
+    </div>
+    <a href="https://google.com">Visit Google</a>
+</body>
+</html>

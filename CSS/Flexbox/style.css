@@ -1,0 +1,44 @@
+.flex-container{
+    display: flex;
+    border: 2px solid gray;
+    height: 180px;
+    flex-direction: row; 
+    /* flex direction can be row or column, row is by default */
+    /* flex direction can be row-reverse or column reverse also which means they'll stack from opposite side */
+
+    justify-content: center;
+    /* justify content centre align items HORIZONTALLY */
+
+    align-items: center;
+    /* align item centre align items VERTICALLY */
+
+    flex-wrap: wrap;
+    /* This will make the items wrap in screen i.e., box will move to next row if screen size is decreased. */
+
+}
+
+.flex-item{
+    background-color: aquamarine;
+    border: 2px solid blue;
+    height: 82px;
+    width: 82px;
+    margin: 10px;
+}
+
+.item1{
+    order: 1;
+    /* item will stack from lowest order to highest, 0 is default. */
+    align-self: flex-end;
+    /* align self will align this item only. */
+}
+.item3{
+    flex-grow: 2;
+    /* flex-grow will increase the of item */
+    /* flex:2; */
+    /* flex is shorthand for flex-grow, flex-shrink and flex-basis*/
+    /* fle-grow and flex-shrink are percentages not fixed value. */
+}
+.item2{
+    flex-shrink: 2;
+    /* flex-shrink 2 will cause item to shrink twice as fast. */
+}
